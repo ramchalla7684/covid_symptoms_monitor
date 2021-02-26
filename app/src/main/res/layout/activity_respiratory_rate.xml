@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A4A4A"
+    tools:context=".RespiratoryRateActivity">
+
+    <TextureView
+        android:id="@+id/fl_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_preview_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clipToPadding="false"
+        android:paddingStart="20dp"
+        android:paddingTop="80dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="80dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:lineHeight="40sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Please rest your phone on your chest for 45 seconds"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/b_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ready_button_background"
+            android:elevation="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:paddingStart="50dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="50dp"
+            android:paddingBottom="18dp"
+            android:text="Ready in 3 seconds"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recorder_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clipToPadding="false"
+        android:paddingStart="20dp"
+        android:paddingTop="60dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="60dp"
+        android:visibility="gone">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/chart_background_light" />
+
+<!--        <com.github.mikephil.charting.charts.LineChart-->
+        <!--            android:id="@+id/line_chart_1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_below="@id/line_chart"-->
+        <!--            android:background="@drawable/chart_background_dark" />-->
+
+        <!--        <com.github.mikephil.charting.charts.LineChart-->
+        <!--            android:id="@+id/line_chart_2"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_below="@id/line_chart_1"-->
+        <!--            android:background="@drawable/chart_background_dark" />-->
+
+        <Button
+            android:id="@+id/b_stop_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_circle_close" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/b_stop_recorder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/timer_background"
+            android:fontFamily="@font/lato_bold"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:text="00:45"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

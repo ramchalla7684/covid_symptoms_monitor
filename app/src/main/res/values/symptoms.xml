@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Source: https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html -->
+<resources>
+    <string-array name="symptoms">
+        <item>Fever or chills</item>
+        <item>Cough</item>
+        <item>Fatigue</item>
+        <item>Muscle or body aches</item>
+        <item>Headache</item>
+        <item>New loss of taste or smell</item>
+        <item>Sore throat</item>
+        <item>Congestion or runny nose</item>
+        <item>Nausea or vomiting</item>
+        <item>Diarrhea</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cse535Assignment</string>
+    <string name="title_activity_symptoms">SymptomsActivity</string>
+
+    <string name="pick_a_date">Pick a date"</string>
+
+    <string name="base_url">http://192.168.0.35:8190</string>
+</resources>
